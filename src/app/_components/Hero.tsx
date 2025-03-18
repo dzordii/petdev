@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="bg-amber-400 text-white relative overflow-hidden">
       <div>
-        <Image 
+        <Image
           src={dogImg}
           alt="Foto do Cachorro"
           fill
@@ -37,7 +37,7 @@ export function Hero() {
 
             <div className="mt-8">
               <p className="text-sm mb-4">
-                <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>
+                <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>{" "}
                 de desconto na primeira compra.
               </p>
             </div>
