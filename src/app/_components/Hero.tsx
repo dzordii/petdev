@@ -35,7 +35,7 @@ export function Hero() {
               Contato via WhatsApp
             </a>
 
-            <div className="mt-8">
+            <div className="mt-8 md:mb-8">
               <p className="text-sm mb-4">
                 <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>{" "}
                 de desconto na primeira compra.
