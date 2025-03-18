@@ -56,7 +56,7 @@ const services = [
 
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
+    loop: true,
     align: "start",
     slidesToScroll: 1,
     breakpoints: {
@@ -76,7 +76,7 @@ export function Services() {
     <section className="bg-white py-16 lg:px-14">
       <div className="container mx-auto px-5">
         <div>
-          <h2 className="font-4xl font-bold mb-12">Serviços</h2>
+          <h2 className="font-lg text-4xl font-bold mb-12">Serviços</h2>
           <div className="relative">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
