@@ -54,14 +54,16 @@ const services = [
   },
 ];
 
+useEmblaCarousel.globalOptions = { loop: true };
+
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
     align: "start",
     slidesToScroll: 1,
+    containScroll: "trimSnaps",
     breakpoints: {
-        '(min-width: 768px)': { slidesToScroll: 3 }
-      }
+      "max-width: 768px": { slidesToScroll: 3 },
+    },
   });
 
   function scrollPrev() {
@@ -83,7 +85,7 @@ export function Services() {
                 {services.map((item, index) => (
                   <div
                     key={index}
-                    className="flex-[0_0_100%] min-w-0 md:flex-[0_0_cal(100%/3)] px-3"
+                    className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3"
                   >
                     <article className="bg-gray-900 text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                       <div className="flex-1 flex items-start justify-between">
