@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="bg-amber-400 text-white relative overflow-hidden lg:px-14">
+    <section className="bg-bg relative overflow-hidden text-white lg:px-14">
       <div>
         <Image
           src={dogImg}
@@ -16,11 +16,11 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-black opacity-60 md:hidden"></div>
       </div>
-      <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
-        <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative">
+      <div className="relative container mx-auto px-4 pt-16 pb-16 md:pb-0">
+        <article className="relative grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="space-y-6">
             <h1
-              className="text-3xl font-bold md:text-4xl lg:text-5xl leading-10"
+              className="text-3xl leading-12 font-bold md:text-4xl lg:text-5xl"
               data-aos="fade-down"
               data-aos-easing="ease-in-sine"
             >
@@ -36,43 +36,43 @@ export function Hero() {
             </p>
 
             <a
-              className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 hover:bg-green-400 duration-200"
+              className="flex w-fit items-center justify-center gap-2 rounded-md bg-green-500 px-5 py-2 font-semibold duration-300 hover:bg-green-400"
               href="#"
               data-aos="fade-right"
               data-aos-easing="ease-in-sine"
             >
-              <WhatsappLogo className="w-5 h-5" />
+              <WhatsappLogo className="h-5 w-5" />
               Contato via WhatsApp
             </a>
 
             <div className="mt-8 md:mb-8">
               <p
-                className="text-sm mb-4"
+                className="mb-4 text-sm"
                 data-aos="fade-right"
                 data-aos-easing="ease-in-sine"
               >
-                <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>{" "}
+                <b className="rounded-md bg-black px-2 py-1 text-white">5%</b>{" "}
                 de desconto na primeira compra.
               </p>
             </div>
           </div>
 
-            <div
-            className="hidden md:block relative h-full"
+          <div
+            className="relative hidden h-full md:block"
             data-aos="fade-left"
             data-aos-easing="ease-in-sine"
-            >
+          >
             <Image
               src={dogImg}
               alt="Foto do Cachorro"
-              className="object-contain absolute right-10 bottom-0"
+              className="absolute right-10 bottom-0 object-contain"
               width={300}
               height={300}
               sizes="(max-width: 768px) 0vw, 50vw"
               quality={100}
               priority
             />
-            </div>
+          </div>
         </article>
       </div>
     </section>

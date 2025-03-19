@@ -51,14 +51,14 @@ export function Testmonials() {
       <div className="container mx-auto px-5">
         <div>
           <h2
-            className="font-lg text-4xl text-center font-bold mb-12"
+            className="font-lg mb-12 text-center text-4xl font-bold"
             data-aos="fade-right"
             data-aos-easing="ease-in-sine"
           >
             Depoimentos
           </h2>
 
-          <div className="relative max-w-4xl mx-auto">
+          <div className="relative mx-auto max-w-4xl">
             <div className="overflow-hidden" ref={emblaRef}>
               <div
                 className="flex"
@@ -66,21 +66,21 @@ export function Testmonials() {
                 data-aos-easing="ease-in-sine"
               >
                 {testmonials.map((item, index) => (
-                  <div key={index} className="flex-[0_0_100%] min-w-0 px-3">
-                    <article className="bg-gray-900 text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
-                      <div className="flex items-center text-center space-y-4 flex-col">
-                        <div className="relative w-24 h-24">
+                  <div key={index} className="min-w-0 flex-[0_0_100%] px-3">
+                    <article className="flex h-full flex-col space-y-4 rounded-2xl bg-gray-900 p-6 text-white">
+                      <div className="flex flex-col items-center space-y-4 text-center">
+                        <div className="relative h-24 w-24">
                           <Image
                             src={item.image}
                             alt={item.author}
                             fill
                             sizes="96px"
                             quality={100}
-                            className="object-cover rounded-full"
+                            className="rounded-full object-cover"
                             priority
                           />
                         </div>
-                        <p className="text-gray-200 px-4">{item.content}</p>
+                        <p className="px-4 text-gray-200">{item.content}</p>
                         <div>
                           <p className="font-bold">{item.author}</p>
                           <p className="text-sm text-gray-400">{item.role}</p>
@@ -93,18 +93,17 @@ export function Testmonials() {
             </div>
 
             <button
-              className=" bg-white flex items-center justify-center rounded-full shadow-lg h-10 w-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
+              className="absolute top-1/2 left-3 z-10 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg"
               onClick={scrollPrev}
-              
             >
-              <ChevronLeft className="w-6 h-6 text-gray-700" />
+              <ChevronLeft className="h-6 w-6 text-gray-700" />
             </button>
 
             <button
-              className=" bg-white flex items-center justify-center rounded-full shadow-lg h-10 w-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
+              className="absolute top-1/2 -right-6 z-10 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg"
               onClick={scrollNext}
             >
-              <ChevronRight className="w-6 h-6 text-gray-700" />
+              <ChevronRight className="h-6 w-6 text-gray-700" />
             </button>
           </div>
         </div>

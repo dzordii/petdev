@@ -79,7 +79,7 @@ export function Services() {
       <div className="container mx-auto px-5">
         <div>
           <h2
-            className="font-lg text-4xl font-bold mb-12"
+            className="font-lg mb-12 text-4xl font-bold"
             data-aos="fade-down"
             data-aos-easing="ease-in-sine"
           >
@@ -95,30 +95,30 @@ export function Services() {
                 {services.map((item, index) => (
                   <div
                     key={index}
-                    className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3"
+                    className="min-w-0 flex-[0_0_100%] px-3 md:flex-[0_0_calc(100%/3)]"
                   >
-                    <article className="bg-gray-900 text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
-                      <div className="flex-1 flex items-start justify-between">
+                    <article className="flex h-full flex-col space-y-4 rounded-2xl bg-gray-900 p-6 text-white">
+                      <div className="flex flex-1 items-start justify-between">
                         <div className="flex gap-3">
                           <span className="text-3xl">{item.icon}</span>
                           <div>
-                            <h3 className="font-bold text-xl mb-1 my-1">
+                            <h3 className="my-1 mb-1 text-xl font-bold">
                               {item.title}
                             </h3>
-                            <p className="text-gray-400 text-sm select-none">
+                            <p className="text-sm text-gray-400 select-none">
                               {item.description}
                             </p>
                           </div>
                         </div>
                       </div>
-                      <div className="border-t border-gray-700 pt-4 flex items-center justify-between">
+                      <div className="flex items-center justify-between border-t border-gray-700 pt-4">
                         <div className="flex items-center gap-2 text-sm">
-                          <Clock className="w-4 h-4 text-gray-400" />
+                          <Clock className="h-4 w-4 text-gray-400" />
                           <span>{item.duration}</span>
                         </div>
                         <a
                           href=""
-                          className="flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300"
+                          className="flex items-center justify-center gap-2 rounded-md px-4 py-1 duration-300 hover:bg-red-500"
                         >
                           <WhatsappLogo className="h-5 w-5" />
                           Entrar em Contato
@@ -131,17 +131,17 @@ export function Services() {
             </div>
 
             <button
-              className=" bg-white flex items-center justify-center rounded-full shadow-lg h-10 w-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
+              className="absolute top-1/2 left-3 z-10 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg"
               onClick={scrollPrev}
             >
-              <ChevronLeft className="w-6 h-6 text-gray-700" />
+              <ChevronLeft className="h-6 w-6 text-gray-700" />
             </button>
 
             <button
-              className=" bg-white flex items-center justify-center rounded-full shadow-lg h-10 w-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
+              className="absolute top-1/2 -right-6 z-10 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg"
               onClick={scrollNext}
             >
-              <ChevronRight className="w-6 h-6 text-gray-700" />
+              <ChevronRight className="h-6 w-6 text-gray-700" />
             </button>
           </div>
         </div>
