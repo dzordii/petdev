@@ -54,12 +54,14 @@ const services = [
   },
 ];
 
-useEmblaCarousel.globalOptions = { loop: false };
+useEmblaCarousel.globalOptions = { loop: true };
 
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     slidesToScroll: 1,
+    duration: 50,
+    loop: false,
   });
 
   function scrollPrev() {
