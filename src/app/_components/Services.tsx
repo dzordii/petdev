@@ -59,10 +59,7 @@ useEmblaCarousel.globalOptions = { loop: true };
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
-    slidesToScroll: 3,
-    breakpoints: {
-      "max-width: 768px": { slidesToScroll: 3 },
-    },
+    slidesToScroll: 1,
   });
 
   function scrollPrev() {
