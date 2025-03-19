@@ -1,6 +1,6 @@
 import Image from "next/image";
-import about1Img from "../../../public/about-1.png";
-import about2Img from "../../../public/about-2.png";
+import about1Img from "../../../public/about-1.jpg";
+import about2Img from "../../../public/about-2.jpg";
 import { Check, MapPin } from "lucide-react";
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
@@ -31,6 +31,7 @@ export function About() {
                 fill
                 quality={100}
                 priority
+                className="object-cover hover:scale-110 duration-300"
               />
             </div>
           </div>

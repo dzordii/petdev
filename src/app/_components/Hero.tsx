@@ -1,5 +1,5 @@
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
-import dogImg from "../../../public/hero-dog.webp";
+import dogImg from "../../../public/hero-dog.png";
 import Image from "next/image";
 
 export function Hero() {
@@ -36,7 +36,7 @@ export function Hero() {
             </p>
 
             <a
-              className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+              className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 hover:bg-green-400 duration-200"
               href="#"
               data-aos="fade-right"
               data-aos-easing="ease-in-sine"
@@ -57,21 +57,22 @@ export function Hero() {
             </div>
           </div>
 
-          <div
-            className="hidden md:block h-full relative"
+            <div
+            className="hidden md:block relative h-full"
             data-aos="fade-left"
             data-aos-easing="ease-in-sine"
-          >
+            >
             <Image
               src={dogImg}
               alt="Foto do Cachorro"
-              className="object-contain"
-              fill
+              className="object-contain absolute right-10 bottom-0"
+              width={300}
+              height={300}
               sizes="(max-width: 768px) 0vw, 50vw"
               quality={100}
               priority
             />
-          </div>
+            </div>
         </article>
       </div>
     </section>
