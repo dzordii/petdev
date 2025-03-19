@@ -66,9 +66,9 @@ export function About() {
               </a>
               <a
                 href="#"
-                className="text-black flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                className="md:text-black text-white border-1 border-transparent hover:border-black md:bg-transparent  bg-black flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
               >
-                <MapPin className="w-5 h-5 text-black" />
+                <MapPin className="w-5 h-5 text-white md:text-black" />
                 Endereço da Loja
               </a>
             </div>
