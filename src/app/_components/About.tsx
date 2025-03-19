@@ -50,7 +50,7 @@ export function About() {
               em atendimento e serviços para o seu pet.
             </p>
 
-            <ul className="space-y-4">
+            <ul className="space-y-4 flex flex-col items-center md:items-start">
               <li className="flex items-center gap-2">
                 <Check className="text-red-500" />
                 Aberto desde 2006
