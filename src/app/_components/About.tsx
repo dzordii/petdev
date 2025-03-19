@@ -41,8 +41,8 @@ export function About() {
             data-aos="fade-left"
             data-aos-easing="ease-in-sine"
           >
-            <h2 className="text-4xl font-bold">SOBRE</h2>
-            <p>
+            <h2 className="text-4xl font-bold text-center md:text-start">SOBRE</h2>
+            <p className="text-center md:text-start">
               Você que ama seu pet, sabe o quanto é importante cuidar da saúde e
               bem-estar dele. E para isso, é fundamental contar com um serviço
               de qualidade e confiança. A PetLove é uma clínica veterinária que
@@ -65,7 +65,7 @@ export function About() {
               </li>
             </ul>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-col md:flex-row items-center md:items-start">
               <a
                 href="#"
                 className="flex w-fit items-center justify-center gap-2 rounded-md bg-green-500 px-4 py-2 text-white duration-300 hover:bg-green-400"

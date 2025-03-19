@@ -18,16 +18,16 @@ export function Hero() {
       </div>
       <div className="relative container mx-auto px-4 pt-16 pb-16 md:pb-0">
         <article className="relative grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center md:items-start">
             <h1
-              className="text-3xl leading-12 font-bold md:text-4xl lg:text-5xl"
+              className="text-3xl leading-12 font-bold md:text-4xl lg:text-5xl text-center md:text-start"
               data-aos="fade-down"
               data-aos-easing="ease-in-sine"
             >
               Seu pet merece cuidado, carinho e atenção especial
             </h1>
             <p
-              className="lg:text-lg"
+              className="lg:text-lg text-center md:text-left"
               data-aos="fade-right"
               data-aos-easing="ease-in-sine"
             >

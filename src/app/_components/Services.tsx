@@ -61,7 +61,8 @@ export function Services() {
     align: "start",
     slidesToScroll: 1,
     duration: 50,
-    loop: false,
+    loop: true,
+    skipSnaps: false,
   });
 
   function scrollPrev() {
@@ -77,7 +78,7 @@ export function Services() {
       <div className="container mx-auto px-5">
         <div>
           <h2
-            className="font-lg mb-12 text-4xl font-bold"
+            className="font-lg mb-12 text-4xl font-bold text-center md:text-left"
             data-aos="fade-down"
             data-aos-easing="ease-in-sine"
           >
@@ -90,8 +91,6 @@ export function Services() {
                   <div
                     key={index}
                     className="min-w-0 flex-[0_0_100%] px-3 md:flex-[0_0_calc(100%/3)]"
-                    data-aos="fade-down"
-                    data-aos-easing="ease-in-sine"
                   >
                     <article className="flex h-full flex-col space-y-4 rounded-2xl bg-gray-900 p-6 text-white">
                       <div className="flex flex-1 items-start justify-between">

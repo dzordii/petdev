@@ -35,7 +35,11 @@ useEmblaCarousel.globalOptions = { loop: true };
 
 export function Testimonials() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: "start",
+    slidesToScroll: 1,
+    duration: 50,
     loop: true,
+    skipSnaps: false,
   });
 
   function scrollPrev() {
@@ -62,12 +66,7 @@ export function Testimonials() {
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
                 {testimonials.map((item, index) => (
-                  <div
-                    key={index}
-                    className="min-w-0 flex-[0_0_100%] px-3"
-                    data-aos="fade-down"
-                    data-aos-easing="ease-in-sine"
-                  >
+                  <div key={index} className="min-w-0 flex-[0_0_100%] px-3">
                     <article className="flex h-full flex-col space-y-4 rounded-2xl bg-gray-900 p-6 text-white">
                       <div className="flex flex-col items-center space-y-4 text-center">
                         <div className="relative h-24 w-24">
@@ -81,10 +80,14 @@ export function Testimonials() {
                             priority
                           />
                         </div>
-                        <p className="px-4 text-gray-200 select-none">{item.content}</p>
+                        <p className="px-4 text-gray-200 select-none">
+                          {item.content}
+                        </p>
                         <div>
                           <p className="font-bold select-none">{item.author}</p>
-                          <p className="text-sm text-gray-400 select-none">{item.role}</p>
+                          <p className="text-sm text-gray-400 select-none">
+                            {item.role}
+                          </p>
                         </div>
                       </div>
                     </article>
