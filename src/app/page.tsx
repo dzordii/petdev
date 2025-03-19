@@ -6,7 +6,7 @@ import { Footer } from "./_components/Footer";
 
 export default function Page() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Hero />
       <About />
       <Services />

@@ -78,10 +78,20 @@ export function Services() {
     <section className="bg-white pt-0 pb-16 lg:px-14">
       <div className="container mx-auto px-5">
         <div>
-          <h2 className="font-lg text-4xl font-bold mb-12">Serviços</h2>
+          <h2
+            className="font-lg text-4xl font-bold mb-12"
+            data-aos="fade-down"
+            data-aos-easing="ease-in-sine"
+          >
+            Serviços
+          </h2>
           <div className="relative">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex">
+              <div
+                className="flex"
+                data-aos="fade-down"
+                data-aos-easing="ease-in-sine"
+              >
                 {services.map((item, index) => (
                   <div
                     key={index}

@@ -8,6 +8,7 @@ import Image from "next/image";
 import {
   FacebookLogo,
   InstagramLogo,
+  WhatsappLogo,
   YoutubeLogo,
 } from "@phosphor-icons/react/dist/ssr";
 
@@ -24,14 +25,15 @@ export function Footer() {
     <section className="bg-amber-900 py-16 lg:px-14 text-white">
       <div className="container mx-auto px-4">
         <div className="border-b border-white/20 pb-8 ">
-          <h4 className="text-3xl font-semibold mb-8 text-center">
+          <h4 className="text-3xl font-semibold mb-8 text-center"
+          >
             Nossos Parceiros
           </h4>
-          <div className="grid grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
             {brands.map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg flex items-center justify-center"
+                className="bg-white p-4 rounded-lg flex items-center justify-center "
               >
                 <Image
                   src={item.logo}
@@ -56,7 +58,8 @@ export function Footer() {
             <p className="mb-4">
               Cuidando do seu melhor amigo com amor e dedicação.
             </p>
-            <a href="#" className="bg-green px-4 py-2 rounded-md mt">
+            <a href="#" className="flex items-center bg-green-600 hover:bg-green-400 duration-300 w-fit gap-2 bg-green px-4 py-2 rounded-md mt">
+              <WhatsappLogo className="w-5 h-5" />
               Contato via WhastApp
             </a>
           </div>

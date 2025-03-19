@@ -9,7 +9,11 @@ export function About() {
     <section className="bg-50 py-16 lg:px-14">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4">
-          <div className="relative">
+          <div
+            className="relative"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
               <Image
                 src={about1Img}
@@ -31,7 +35,11 @@ export function About() {
             </div>
           </div>
 
-          <div className="space-y-6 mt-10">
+          <div
+            className="space-y-6 mt-10"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+          >
             <h2 className="text-4xl font-bold">SOBRE</h2>
             <p>
               Você que ama seu pet, sabe o quanto é importante cuidar da saúde e

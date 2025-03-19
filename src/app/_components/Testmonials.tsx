@@ -50,13 +50,21 @@ export function Testmonials() {
     <section className="bg-amber-400 py-16 lg:px-14">
       <div className="container mx-auto px-5">
         <div>
-          <h2 className="font-lg text-4xl text-center font-bold mb-12">
+          <h2
+            className="font-lg text-4xl text-center font-bold mb-12"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+          >
             Depoimentos
           </h2>
 
           <div className="relative max-w-4xl mx-auto">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex">
+              <div
+                className="flex"
+                data-aos="fade-left"
+                data-aos-easing="ease-in-sine"
+              >
                 {testmonials.map((item, index) => (
                   <div key={index} className="flex-[0_0_100%] min-w-0 px-3">
                     <article className="bg-gray-900 text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
@@ -87,6 +95,7 @@ export function Testmonials() {
             <button
               className=" bg-white flex items-center justify-center rounded-full shadow-lg h-10 w-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
               onClick={scrollPrev}
+              
             >
               <ChevronLeft className="w-6 h-6 text-gray-700" />
             </button>
