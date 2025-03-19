@@ -94,12 +94,12 @@ export function Services() {
                     data-aos="fade-down"
                     data-aos-easing="ease-in-sine"
                   >
-                    <article className="bg-gray-900 flex h-full flex-col space-y-4 rounded-2xl p-6 text-white">
+                    <article className="flex h-full flex-col space-y-4 rounded-2xl bg-gray-900 p-6 text-white">
                       <div className="flex flex-1 items-start justify-between">
                         <div className="flex gap-3">
                           <span className="text-3xl">{item.icon}</span>
                           <div>
-                            <h3 className="my-1 mb-1 text-xl font-bold">
+                            <h3 className="my-1 mb-1 text-xl font-bold select-none">
                               {item.title}
                             </h3>
                             <p className="text-sm text-gray-100 select-none">
@@ -111,7 +111,7 @@ export function Services() {
                       <div className="flex items-center justify-between border-t border-gray-100 pt-4">
                         <div className="flex items-center gap-2 text-sm">
                           <Clock className="h-4 w-4 text-gray-100" />
-                          <span>{item.duration}</span>
+                          <span className="select-none">{item.duration}</span>
                         </div>
                         <a
                           href=""

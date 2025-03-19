@@ -1,7 +1,7 @@
 import { Hero } from "./_components/Hero";
 import { About } from "./_components/About";
 import { Services } from "./_components/Services";
-import { Testmonials } from "./_components/Testmonials";
+import { Testimonials } from "./_components/Testimonials";
 import { Footer } from "./_components/Footer";
 
 export default function Page() {
@@ -10,7 +10,7 @@ export default function Page() {
       <Hero />
       <About />
       <Services />
-      <Testmonials />
+      <Testimonials />
       <Footer />
     </main>
   );

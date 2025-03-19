@@ -7,7 +7,7 @@ import tutor3 from "../../../public/tutor3.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
-const testmonials = [
+const testimonials = [
   {
     content:
       "Desde que conheci a lavar a Luna na PetLove, ela nunca mais quis saber de outro lugar. O atendimento é excelente e o carinho com os animais é visível.",
@@ -33,7 +33,7 @@ const testmonials = [
 
 useEmblaCarousel.globalOptions = { loop: true };
 
-export function Testmonials() {
+export function Testimonials() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
   });
@@ -61,7 +61,7 @@ export function Testmonials() {
           <div className="relative mx-auto max-w-4xl">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
-                {testmonials.map((item, index) => (
+                {testimonials.map((item, index) => (
                   <div
                     key={index}
                     className="min-w-0 flex-[0_0_100%] px-3"
@@ -81,10 +81,10 @@ export function Testmonials() {
                             priority
                           />
                         </div>
-                        <p className="px-4 text-gray-200">{item.content}</p>
+                        <p className="px-4 text-gray-200 select-none">{item.content}</p>
                         <div>
-                          <p className="font-bold">{item.author}</p>
-                          <p className="text-sm text-gray-400">{item.role}</p>
+                          <p className="font-bold select-none">{item.author}</p>
+                          <p className="text-sm text-gray-400 select-none">{item.role}</p>
                         </div>
                       </div>
                     </article>
