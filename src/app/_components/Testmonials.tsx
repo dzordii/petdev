@@ -47,7 +47,7 @@ export function Testmonials() {
   }
 
   return (
-    <section className="bg-amber-300 py-16 lg:px-14">
+    <section className="bg-amber-400 py-16 lg:px-14">
       <div className="container mx-auto px-5">
         <div>
           <h2 className="font-lg text-4xl text-center font-bold mb-12">
