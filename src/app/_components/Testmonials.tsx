@@ -47,26 +47,27 @@ export function Testmonials() {
   }
 
   return (
-    <section className="bg-amber-400 py-16 lg:px-14">
+    <section className="bg-bg py-16 lg:px-14">
       <div className="container mx-auto px-5">
         <div>
           <h2
-            className="font-lg mb-12 text-center text-4xl font-bold"
+            className="font-lg mb-12 text-center text-4xl font-bold text-white"
             data-aos="fade-right"
             data-aos-easing="ease-in-sine"
           >
-            Depoimentos
+            Depoimentos dos Nossos Clientes
           </h2>
 
           <div className="relative mx-auto max-w-4xl">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div
-                className="flex"
-                data-aos="fade-left"
-                data-aos-easing="ease-in-sine"
-              >
+              <div className="flex">
                 {testmonials.map((item, index) => (
-                  <div key={index} className="min-w-0 flex-[0_0_100%] px-3">
+                  <div
+                    key={index}
+                    className="min-w-0 flex-[0_0_100%] px-3"
+                    data-aos="fade-down"
+                    data-aos-easing="ease-in-sine"
+                  >
                     <article className="flex h-full flex-col space-y-4 rounded-2xl bg-gray-900 p-6 text-white">
                       <div className="flex flex-col items-center space-y-4 text-center">
                         <div className="relative h-24 w-24">

@@ -59,8 +59,7 @@ useEmblaCarousel.globalOptions = { loop: true };
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
-    slidesToScroll: 1,
-    containScroll: "trimSnaps",
+    slidesToScroll: 3,
     breakpoints: {
       "max-width: 768px": { slidesToScroll: 3 },
     },
@@ -87,17 +86,15 @@ export function Services() {
           </h2>
           <div className="relative">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div
-                className="flex"
-                data-aos="fade-down"
-                data-aos-easing="ease-in-sine"
-              >
+              <div className="flex">
                 {services.map((item, index) => (
                   <div
                     key={index}
                     className="min-w-0 flex-[0_0_100%] px-3 md:flex-[0_0_calc(100%/3)]"
+                    data-aos="fade-down"
+                    data-aos-easing="ease-in-sine"
                   >
-                    <article className="flex h-full flex-col space-y-4 rounded-2xl bg-gray-900 p-6 text-white">
+                    <article className="bg-gray-900 flex h-full flex-col space-y-4 rounded-2xl p-6 text-white">
                       <div className="flex flex-1 items-start justify-between">
                         <div className="flex gap-3">
                           <span className="text-3xl">{item.icon}</span>
@@ -105,20 +102,20 @@ export function Services() {
                             <h3 className="my-1 mb-1 text-xl font-bold">
                               {item.title}
                             </h3>
-                            <p className="text-sm text-gray-400 select-none">
+                            <p className="text-sm text-gray-100 select-none">
                               {item.description}
                             </p>
                           </div>
                         </div>
                       </div>
-                      <div className="flex items-center justify-between border-t border-gray-700 pt-4">
+                      <div className="flex items-center justify-between border-t border-gray-100 pt-4">
                         <div className="flex items-center gap-2 text-sm">
-                          <Clock className="h-4 w-4 text-gray-400" />
+                          <Clock className="h-4 w-4 text-gray-100" />
                           <span>{item.duration}</span>
                         </div>
                         <a
                           href=""
-                          className="flex items-center justify-center gap-2 rounded-md px-4 py-1 duration-300 hover:bg-red-500"
+                          className="hover:bg-bg flex items-center justify-center gap-2 rounded-md px-4 py-1 duration-300"
                         >
                           <WhatsappLogo className="h-5 w-5" />
                           Entrar em Contato
