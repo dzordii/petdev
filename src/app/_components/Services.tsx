@@ -54,7 +54,7 @@ const services = [
   },
 ];
 
-useEmblaCarousel.globalOptions = { loop: true };
+useEmblaCarousel.globalOptions = { loop: false };
 
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
